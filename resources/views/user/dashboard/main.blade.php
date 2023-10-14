@@ -15,8 +15,8 @@
 
               <div class="intro-content">
                 @php
-                    $judul = "Keyboard Gaming Rexus Daxa M84 Pro";
-                    $slug = Str::slug($judul);
+                    $judul1 = "Keyboard Gaming Rexus Daxa M84 Pro";
+                    $slug = Str::slug($judul1);
                 @endphp
                   <h3 class="intro-subtitle">Promo Oktober</h3><!-- End .h3 intro-subtitle -->
                   <h1 class="intro-title text-white">Keyboard Mechanical REXUS</h1><!-- End .intro-title -->
@@ -40,8 +40,8 @@
 
               <div class="intro-content">
                 @php
-                    $judul = "Gaming Chair REXUS RGC 201 Max";
-                    $slug = Str::slug($judul);
+                    $judul1 = "Gaming Chair REXUS RGC 201 Max";
+                    $slug = Str::slug($judul1);
                 @endphp
                   <h3 class="intro-subtitle">Trending Now</h3><!-- End .h3 intro-subtitle -->
                   <h1 class="intro-title text-white">Gaming Chair Rexus</h1><!-- End .intro-title -->
@@ -65,8 +65,8 @@
 
               <div class="intro-content">
                 @php
-                    $judul = "Mouse Razer Basilisk V3 Pro";
-                    $slug = Str::slug($judul);
+                    $judul1 = "Mouse Razer Basilisk V3 Pro";
+                    $slug = Str::slug($judul1);
                 @endphp
                   <h3 class="intro-subtitle text-white">Promo Gear</h3><!-- End .h3 intro-subtitle -->
                   <h1 class="intro-title text-white">Mouse Razer Dragon Pro</h1><!-- End .intro-title -->
@@ -122,7 +122,7 @@
                             </div><!-- End .product-cat -->
                             <h3 class="product-title">{{$p->nama_produk}}</h3><!-- End .product-title -->
                             <div class="product-price">
-                                Rp. {{number_format($p->harga_produk)}}
+                                Rp. {{number_format($p->harga_produk, 0, ',', '.')}}
                             </div><!-- End .product-price -->
                         </div><!-- End .product-body -->
 

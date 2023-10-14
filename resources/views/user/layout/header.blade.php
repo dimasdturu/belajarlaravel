@@ -58,7 +58,7 @@
 
                                             <span class="cart-product-info">
                                                 <span class="cart-product-qty">{{$gk->qty}}</span>
-                                                - Total : Rp. {{$gk->qty*$gk->harga_produk}}
+                                                - Total : Rp. {{number_format($gk->qty*$gk->harga_produk, 0, ',', '.')}}
                                             </span>
                                             <form action="{{route('userCheckout')}}" method="POST">
                                                 @csrf

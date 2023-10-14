@@ -46,7 +46,7 @@
                                     </h3><!-- End .product-title -->
                                 </div><!-- End .product -->
                             </td>
-                            <td class="price-col">Rp. {{$t->transaksi_detail[0]->produk->harga_produk*$t->transaksi_detail[0]->qty}}</td>
+                            <td class="price-col">Rp. {{ number_format($t->transaksi_detail[0]->produk->harga_produk * $t->transaksi_detail[0]->qty, 0, ',', '.') }}</td>
                             <td class="stock-col"><span class="in-stock">{{$t->status_transaksi}}</span></td>
                             <td class="action-col">
                                 @if($t->status_transaksi == 'Pengiriman')

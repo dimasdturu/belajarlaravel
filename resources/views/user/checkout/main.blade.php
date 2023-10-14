@@ -93,11 +93,11 @@
                                 <tbody>
                                     <tr>
                                         <td><a href="#">{{$produk->nama_produk}}</a></td>
-                                        <td>Rp. {{$produk->harga_produk*$keranjang->qty}}</td>
+                                        <td>Rp. {{number_format($produk->harga_produk*$keranjang->qty, 0, ',', '.')}}</td>
                                     </tr>
                                     <tr class="summary-total">
                                         <td>Total:</td>
-                                        <td>Rp. {{$produk->harga_produk*$keranjang->qty}}</td>
+                                        <td>Rp. {{number_format($produk->harga_produk*$keranjang->qty, 0, ',', '.')}}</td>
                                     </tr><!-- End .summary-total -->
                                 </tbody>
                             </table><!-- End .table table-summary -->

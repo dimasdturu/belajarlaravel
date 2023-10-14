@@ -43,7 +43,7 @@
                         </div><!-- End .rating-container -->
 
                         <div class="product-price">
-                            Rp. {{number_format($produk->harga_produk)}}
+                            Rp. {{number_format($produk->harga_produk, 0, ',', '.')}}
                         </div><!-- End .product-price -->
 
                         <form action="{{route('userAddToCart')}}" method="POST">
